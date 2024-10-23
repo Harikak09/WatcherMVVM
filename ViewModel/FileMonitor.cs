@@ -52,7 +52,8 @@ namespace FileWatcherMVVM1.ViewModel
             _createdFiles = new List<string>();
             _deletedFiles = new List<string>();
             //Intialize the cloud service
-            _cloudSyncService = new CloudSyncService("Azure_COnnection_String", "our_container");
+            /*Needs to add connetion string part*/
+            _cloudSyncService = new CloudSyncService("Azure_Connection_String", "our_container");
             //Start monitoring the file/folder.
             StartMonitoring();
         }
